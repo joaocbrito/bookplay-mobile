@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, View } from 'react-native';
 
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
@@ -21,36 +21,36 @@ const Following: React.FC = () => {
     const items: Item[] = [
       {
         key: 'PAGE_HEADING',
-        render: () => <Heading>Following</Heading>,
+        render: () => <Heading>Bookplay</Heading>,
       },
 
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <Title>Followed Categories</Title>,
+        render: () => <Title>Livros</Title>,
         isTitle: true,
       },
       { key: 'C1', render: () => <CategoryList /> },
 
       {
         key: 'LIVE_CHANNELS',
-        render: () => <Title>Live Channels</Title>,
+        render: () => <Title />,
         isTitle: true,
       },
-      { key: 'C2', render: () => <StreamList /> },
+      { key: 'C2', render: () => <View /> },
 
       {
         key: 'CONTINUE_WATCHING',
-        render: () => <Title>Continue Watching</Title>,
+        render: () => <Title />,
         isTitle: true,
       },
-      { key: 'C3', render: () => <StreamList /> },
+      { key: 'C3', render: () => <View /> },
 
       {
         key: 'OFFLINE_CHANNELS',
-        render: () => <Title>Offiline Channels</Title>,
+        render: () => <Title />,
         isTitle: true,
       },
-      { key: 'C4', render: () => <ChannelList /> },
+      { key: 'C4', render: () => <View /> },
     ];
 
     // Array que contem apenas os indices dos elementos que sao titulos

@@ -38,13 +38,13 @@ const Routes: React.FC = () => (
       }}
     >
       <Screen
-        name="Following"
+        name="Explore"
         component={Following}
         options={{
           tabBarIcon: ({ size, focused }) => {
             return (
-              <Ionicons
-                name="md-heart"
+              <MaterialCommunityIcons
+                name="compass-outline"
                 size={size}
                 color={focused ? colors.purple : colors.black}
               />
@@ -83,7 +83,7 @@ const Routes: React.FC = () => (
         }}
       />
       <Screen
-        name="Esports"
+        name="Pontos"
         component={ComingSoon}
         options={{
           tabBarIcon: ({ size, focused }) => {
